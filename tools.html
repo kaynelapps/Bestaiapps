@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AI Tools Directory - Best AI Apps 2025</title>
+  <meta name="description" content="Comprehensive directory of AI tools and applications. Discover detailed reviews, features, pricing, and comparisons of the best AI software available.">
+  <meta name="keywords" content="AI tools, AI software, AI applications, AI tool reviews, AI tool directory, artificial intelligence tools, AI tool comparison">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bestaiapps.site/tools.html">
+  <meta property="og:title" content="AI Tools Directory - Best AI Apps 2025">
+  <meta property="og:description" content="Comprehensive directory of AI tools and applications. Discover detailed reviews, features, pricing, and comparisons of the best AI software available.">
+  <meta property="og:image" content="https://bestaiapps.site/assets/img/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bestaiapps.site/tools.html">
+  <meta property="twitter:title" content="AI Tools Directory - Best AI Apps 2025">
+  <meta property="twitter:description" content="Comprehensive directory of AI tools and applications. Discover detailed reviews, features, pricing, and comparisons of the best AI software available.">
+  <meta property="twitter:image" content="https://bestaiapps.site/assets/img/og-image.jpg">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="tools-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Best<span class="accent">AI</span>Apps</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="categories.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="categories/ai-writing-tools.html">AI Writing Tools</a></li>
+              <li><a href="categories/ai-image-generators.html">AI Image Generators</a></li>
+              <li><a href="categories/ai-video-creation.html">AI Video Creation</a></li>
+              <li><a href="categories/ai-chatbots.html">AI Chatbots</a></li>
+              <li><a href="categories/ai-coding-tools.html">AI Coding Tools</a></li>
+              <li><a href="categories/ai-productivity.html">AI Productivity</a></li>
+              <li><a href="categories/ai-marketing-sales.html">AI Marketing & Sales</a></li>
+              <li><a href="categories/ai-seo-tools.html">AI SEO Tools</a></li>
+              <li><a href="categories/ai-voice-speech.html">AI Voice & Speech</a></li>
+              <li><a href="categories/ai-education.html">AI Education</a></li>
+            </ul>
+          </li>
+          <li><a href="tools.html" class="active">Tools</a></li>
+          <li><a href="blog.html">Articles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="submit-tool.html">Submit Tool</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>AI Tools Directory</h1>
+        <p>Comprehensive reviews and analysis of the best AI tools and applications</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Tools</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools section">
+      <div class="container">
+        
+        <!-- Search Bar -->
+        <div class="row justify-content-center mb-5" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search AI tools..." id="toolSearch">
+              <button class="search-btn" onclick="searchTools()">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-options mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="filter-group">
+                <label>Sort by:</label>
+                <select id="sortFilter" class="form-select">
+                  <option value="name">Name (A-Z)</option>
+                  <option value="category">Category</option>
+                  <option value="rating">Rating</option>
+                  <option value="pricing">Pricing</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="filter-group">
+                <label>Pricing:</label>
+                <select id="pricingFilter" class="form-select">
+                  <option value="all">All Pricing</option>
+                  <option value="free">Free</option>
+                  <option value="freemium">Freemium</option>
+                  <option value="paid">Paid</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools by Category -->
+        <div class="tools-container">
+
+          <!-- AI Chatbots Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="category-title">
+              <i class="bi bi-chat-dots"></i>
+              AI Chatbots
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="freemium" data-rating="4.8">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/openai.com" alt="ChatGPT" class="tool-logo">
+                  <div class="tool-badge featured">Featured</div>
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/chatbots/chatgpt.html">ChatGPT</a></h3>
+                  <p>Advanced conversational AI that can help with writing, coding, analysis, and creative tasks.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★★</span>
+                      <span>4.8 (12,450 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Writing</span>
+                    <span class="tag">Coding</span>
+                    <span class="tag">Analysis</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="paid" data-rating="4.6">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/anthropic.com" alt="Claude" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/chatbots/claude.html">Claude</a></h3>
+                  <p>AI assistant focused on being helpful, harmless, and honest with advanced reasoning capabilities.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.6 (8,920 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$20/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Reasoning</span>
+                    <span class="tag">Analysis</span>
+                    <span class="tag">Safety</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Writing Tools Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="category-title">
+              <i class="bi bi-pencil-square"></i>
+              AI Writing Tools
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="paid" data-rating="4.5">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/jasper.ai" alt="Jasper" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/writing/jasper.html">Jasper</a></h3>
+                  <p>AI content platform that helps create high-quality marketing copy, blog posts, and creative content.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.5 (6,780 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$39/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Marketing</span>
+                    <span class="tag">Blog Posts</span>
+                    <span class="tag">Copy</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="freemium" data-rating="4.3">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/grammarly.com" alt="Grammarly" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/writing/grammarly.html">Grammarly</a></h3>
+                  <p>AI-powered writing assistant for grammar checking, style improvement, and tone adjustment.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.3 (9,560 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Grammar</span>
+                    <span class="tag">Editing</span>
+                    <span class="tag">Style</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Image Generators Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="category-title">
+              <i class="bi bi-image"></i>
+              AI Image Generators
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="paid" data-rating="4.7">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/midjourney.com" alt="Midjourney" class="tool-logo">
+                  <div class="tool-badge popular">Popular</div>
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/image-generators/midjourney.html">Midjourney</a></h3>
+                  <p>Create stunning, artistic images from text descriptions using advanced AI image generation.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★★</span>
+                      <span>4.7 (8,920 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$10/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Art</span>
+                    <span class="tag">Design</span>
+                    <span class="tag">Creative</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="freemium" data-rating="4.4">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/openai.com" alt="DALL-E" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/image-generators/dall-e.html">DALL-E 3</a></h3>
+                  <p>OpenAI's advanced image generation model that creates detailed images from text descriptions.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.4 (7,340 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Images</span>
+                    <span class="tag">Creative</span>
+                    <span class="tag">OpenAI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Coding Tools Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="category-title">
+              <i class="bi bi-code-slash"></i>
+              AI Coding Tools
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="paid" data-rating="4.6">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/github.com" alt="GitHub Copilot" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/coding/github-copilot.html">GitHub Copilot</a></h3>
+                  <p>AI-powered code completion and programming assistant that helps developers write code faster.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.6 (5,680 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$10/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Coding</span>
+                    <span class="tag">Development</span>
+                    <span class="tag">Productivity</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="freemium" data-rating="4.5">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/cursor.sh" alt="Cursor" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/coding/cursor.html">Cursor</a></h3>
+                  <p>AI-first code editor that helps you write, edit, and understand code with intelligent assistance.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.5 (3,240 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Code Editor</span>
+                    <span class="tag">AI Assistant</span>
+                    <span class="tag">Development</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Productivity Tools Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="500">
+            <h2 class="category-title">
+              <i class="bi bi-briefcase"></i>
+              AI Productivity Tools
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="paid" data-rating="4.5">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/notion.so" alt="Notion AI" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/productivity/notion-ai.html">Notion AI</a></h3>
+                  <p>Integrated AI writing assistant within Notion for content creation, summarization, and brainstorming.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.5 (3,240 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$8/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Writing</span>
+                    <span class="tag">Productivity</span>
+                    <span class="tag">Notes</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="freemium" data-rating="4.4">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/canva.com" alt="Canva AI" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/productivity/canva-ai.html">Canva AI</a></h3>
+                  <p>AI-powered design platform for creating graphics, presentations, and marketing materials.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.4 (7,890 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Design</span>
+                    <span class="tag">Graphics</span>
+                    <span class="tag">Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Video Tools Category -->
+          <div class="tool-category" data-aos="fade-up" data-aos-delay="600">
+            <h2 class="category-title">
+              <i class="bi bi-play-circle"></i>
+              AI Video Tools
+            </h2>
+            <div class="tools-grid">
+              <div class="tool-card" data-pricing="paid" data-rating="4.3">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/runway.ml" alt="Runway" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/video/runway.html">Runway</a></h3>
+                  <p>AI-powered video editing and generation platform for creating professional video content.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.3 (2,150 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">$15/month</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">Video Editing</span>
+                    <span class="tag">Generation</span>
+                    <span class="tag">Creative</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tool-card" data-pricing="freemium" data-rating="4.2">
+                <div class="tool-header">
+                  <img src="https://logo.clearbit.com/synthesia.io" alt="Synthesia" class="tool-logo">
+                </div>
+                <div class="tool-content">
+                  <h3><a href="tools/video/synthesia.html">Synthesia</a></h3>
+                  <p>Create professional AI videos with avatars and voiceovers without cameras or microphones.</p>
+                  <div class="tool-meta">
+                    <div class="tool-rating">
+                      <span class="stars">★★★★☆</span>
+                      <span>4.2 (1,890 reviews)</span>
+                    </div>
+                    <div class="tool-pricing">Freemium</div>
+                  </div>
+                  <div class="tool-tags">
+                    <span class="tag">AI Avatars</span>
+                    <span class="tag">Voiceover</span>
+                    <span class="tag">Business</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-5" data-aos="fade-up">
+          <button class="btn-load-more" onclick="loadMoreTools()">
+            <i class="bi bi-arrow-down-circle"></i>
+            Load More Tools
+          </button>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter-section mt-5" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>Get Weekly AI Tool Updates</h3>
+              <p>Stay informed about the latest AI tools and get exclusive reviews delivered to your inbox</p>
+              <form class="newsletter-form d-flex justify-content-center">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Tools Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename">Best<span class="accent">AI</span>Apps</h1>
+          </a>
+          <p>Your ultimate destination for discovering, comparing, and choosing the best AI tools and applications.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/bestaiapps"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com/bestaiapps"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/bestaiapps"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com/company/bestaiapps"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="categories/ai-writing-tools.html">Writing Tools</a></li>
+            <li><a href="categories/ai-image-generators.html">Image Generators</a></li>
+            <li><a href="categories/ai-chatbots.html">AI Chatbots</a></li>
+            <li><a href="categories/ai-coding-tools.html">Coding Tools</a></li>
+            <li><a href="categories/ai-productivity.html">Productivity</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="submit-tool.html">Submit Tool</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="submit-tool.html">Submit Tool</a></li>
+            <li><a href="advertise.html">Advertise</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">BestAIApps</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Tools Page JS -->
+  <script>
+    // Search functionality for tools
+    function searchTools() {
+      const searchTerm = document.getElementById('toolSearch').value.toLowerCase();
+      const toolCards = document.querySelectorAll('.tool-card');
+      const categories = document.querySelectorAll('.tool-category');
+      
+      let hasVisibleTools = false;
+
+      categories.forEach(category => {
+        const categoryTools = category.querySelectorAll('.tool-card');
+        let categoryHasVisible = false;
+
+        categoryTools.forEach(card => {
+          const title = card.querySelector('h3 a').textContent.toLowerCase();
+          const description = card.querySelector('p').textContent.toLowerCase();
+          const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase());
+          
+          if (title.includes(searchTerm) || 
+              description.includes(searchTerm) || 
+              tags.some(tag => tag.includes(searchTerm)) || 
+              searchTerm === '') {
+            card.style.display = 'block';
+            categoryHasVisible = true;
+            hasVisibleTools = true;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show/hide entire category based on whether it has visible tools
+        if (categoryHasVisible || searchTerm === '') {
+                  category.style.display = 'block';
+        } else {
+          category.style.display = 'none';
+        }
+      });
+
+      // Show no results message if needed
+      showNoResults(!hasVisibleTools && searchTerm !== '');
+    }
+
+    // Real-time search
+    document.getElementById('toolSearch').addEventListener('input', searchTools);
+
+    // Enter key support
+    document.getElementById('toolSearch').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        searchTools();
+      }
+    });
+
+    // Filter functionality
+    function applyFilters() {
+      const sortFilter = document.getElementById('sortFilter').value;
+      const pricingFilter = document.getElementById('pricingFilter').value;
+      const toolCards = document.querySelectorAll('.tool-card');
+      
+      // Apply pricing filter
+      toolCards.forEach(card => {
+        const pricing = card.getAttribute('data-pricing');
+        if (pricingFilter === 'all' || pricing === pricingFilter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Apply sorting
+      const categories = document.querySelectorAll('.tool-category');
+      categories.forEach(category => {
+        const toolsGrid = category.querySelector('.tools-grid');
+        const cards = Array.from(toolsGrid.querySelectorAll('.tool-card'));
+        
+        cards.sort((a, b) => {
+          switch(sortFilter) {
+            case 'name':
+              return a.querySelector('h3 a').textContent.localeCompare(b.querySelector('h3 a').textContent);
+            case 'rating':
+              return parseFloat(b.getAttribute('data-rating')) - parseFloat(a.getAttribute('data-rating'));
+            case 'pricing':
+              const pricingOrder = { 'free': 0, 'freemium': 1, 'paid': 2 };
+              return pricingOrder[a.getAttribute('data-pricing')] - pricingOrder[b.getAttribute('data-pricing')];
+            default:
+              return 0;
+          }
+        });
+
+        // Reorder cards in DOM
+        cards.forEach(card => toolsGrid.appendChild(card));
+      });
+    }
+
+    // Add event listeners for filters
+    document.getElementById('sortFilter').addEventListener('change', applyFilters);
+    document.getElementById('pricingFilter').addEventListener('change', applyFilters);
+
+    // Show/hide no results message
+    function showNoResults(show) {
+      let noResultsDiv = document.getElementById('noResults');
+      
+      if (show && !noResultsDiv) {
+        noResultsDiv = document.createElement('div');
+        noResultsDiv.id = 'noResults';
+        noResultsDiv.className = 'text-center mt-5';
+        noResultsDiv.innerHTML = `
+          <div class="alert alert-info">
+            <h4>No tools found</h4>
+            <p>Try adjusting your search terms or filters, or browse all tools above.</p>
+          </div>
+        `;
+        document.querySelector('.tools-container').appendChild(noResultsDiv);
+      } else if (!show && noResultsDiv) {
+        noResultsDiv.remove();
+      }
+    }
+
+    // Load more tools functionality
+    function loadMoreTools() {
+      // This would typically load more tools from your backend
+      // For now, we'll just show a message
+      const button = document.querySelector('.btn-load-more');
+      button.innerHTML = '<i class="bi bi-check-circle"></i> All tools loaded';
+      button.disabled = true;
+      button.style.opacity = '0.6';
+    }
+
+    // Tool card interactions
+    document.addEventListener('DOMContentLoaded', function() {
+      const toolCards = document.querySelectorAll('.tool-card');
+      
+      toolCards.forEach(card => {
+        // Hover effects
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-8px)';
+          this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+          this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.08)';
+        });
+
+        // Click tracking
+        card.addEventListener('click', function(e) {
+          if (!e.target.closest('a')) {
+            const toolName = this.querySelector('h3 a').textContent;
+            const category = this.closest('.tool-category').querySelector('.category-title').textContent.trim();
+            console.log(`Tool clicked: ${toolName} in category: ${category}`);
+            
+            // Navigate to tool page
+            const link = this.querySelector('h3 a').href;
+            if (link) {
+              window.location.href = link;
+            }
+          }
+        });
+      });
+
+      // Newsletter form handling
+      document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        console.log('Newsletter signup:', email);
+        alert('Thank you for subscribing to our AI tools newsletter!');
+        this.reset();
+      });
+
+      // Initialize tooltips for badges
+      const badges = document.querySelectorAll('.tool-badge');
+      badges.forEach(badge => {
+        badge.title = badge.textContent === 'Featured' ? 'Recommended by our experts' : 'Most popular choice';
+      });
+    });
+
+    // Lazy loading for tool logos
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            if (img.dataset.src) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+              imageObserver.unobserve(img);
+            }
+          }
+        });
+      });
+
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    }
+
+    // Add smooth scrolling for category navigation
+    function scrollToCategory(categoryName) {
+      const category = document.querySelector(`[data-category="${categoryName}"]`);
+      if (category) {
+        category.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+
+    // Track scroll progress
+    window.addEventListener('scroll', function() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      
+      // Update any progress indicators if needed
+      // document.getElementById("progressBar").style.width = scrolled + "%";
+    });
+  </script>
+
+  <!-- Custom CSS for Tools Page -->
+  <style>
+    .tool-category {
+      margin-bottom: 4rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .category-title {
+      color: #2c3e50;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .category-title i {
+      color: #3498db;
+      font-size: 1.75rem;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .tool-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      border: 1px solid #f1f5f9;
+      transition: all 0.3s ease;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .tool-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .tool-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid #f1f5f9;
+    }
+
+    .tool-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tool-badge.featured {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+    }
+
+    .tool-badge.popular {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      color: white;
+    }
+
+    .tool-content h3 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .tool-content h3 a {
+      color: #2c3e50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .tool-content h3 a:hover {
+      color: #3498db;
+    }
+
+    .tool-content p {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .tool-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tool-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .stars {
+      color: #f39c12;
+      font-size: 1rem;
+    }
+
+    .tool-pricing {
+      background: #e8f5e8;
+      color: #27ae60;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .tool-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background: #f8fafc;
+      color: #64748b;
+      padding: 0.25rem 0.75rem;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+
+    .tag:hover {
+      background: #3498db;
+      color: white;
+      border-color: #3498db;
+    }
+
+    .filter-options {
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .filter-group label {
+      font-weight: 500;
+      color: #2c3e50;
+      min-width: 80px;
+    }
+
+    .form-select {
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 0.75rem;
+    }
+
+    .btn-load-more {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 25px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-load-more:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    }
+
+    .newsletter-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .newsletter-form {
+      max-width: 400px;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.875rem 1.25rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 25px;
+      font-size: 0.95rem;
+    }
+
+    .newsletter-form button {
+      padding: 0.875rem 1.75rem;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+      background: #2980b9;
+    }
+
+    @media (max-width: 768px) {
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .tool-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .newsletter-form {
+        flex-direction: column;
+      }
+      
+      .filter-options .row {
+        gap: 1rem;
+      }
+      
+      .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+</body>
+</html>
+

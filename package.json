@@ -1,0 +1,26 @@
+{
+  "name": "bestaiapps-content-generator",
+  "version": "1.0.0",
+  "description": "Automated content generation for Best AI Apps website",
+  "main": "scripts/generate-content.js",
+  "scripts": {
+    "test": "node test-cody-api.js",
+    "generate": "node scripts/generate-content.js",
+    "generate-daily": "node scripts/generate-content.js",
+    "setup": "npm install && node scripts/setup.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": [
+    "ai",
+    "content-generation",
+    "automation"
+  ],
+  "author": "Best AI Apps",
+  "license": "MIT"
+}

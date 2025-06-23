@@ -1,0 +1,38 @@
+name: Generate Daily AI Content
+
+on:
+  schedule:
+    # Run twice daily: 6 AM and 6 PM UTC
+    - cron: '0 6 * * *'
+    - cron: '0 18 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Generate content
+      env:
+        CODY_ACCESS_TOKEN: ${{ secrets.CODY_ACCESS_TOKEN }}
+      run: npm run generate
+      
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Auto-generate daily AI content - $(date +'%Y-%m-%d %H:%M')" || exit 0
+        git push
