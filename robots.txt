@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and development files
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /test-cody-api.js
+
+# Allow important directories
+Allow: /articles/
+Allow: /categories/
+Allow: /tools/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://bestaiapps.site/sitemap.xml
